@@ -1,0 +1,14 @@
+[package]
+name = "vba_project_password_remover"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+regex = "1.11"
+zip = { version = "2.2", default-features = false, features = ["deflate"] }
+tokio = { version = "1.43", features = ["full"] }
+axum = { version = "0.8", features = ["multipart"] }
+
+[dev-dependencies]
+tower = { version = "0.5", features = ["util"] }
